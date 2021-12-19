@@ -1,0 +1,26 @@
+/*
+ * style
+ */
+
+/* for testing DXPR theme */
+
+/* body.body--dxpr-theme-nav-desktop */
+body.body--dxpr-theme-nav-desktop a.name.navbar-brand {
+  font-weight: bold !important;
+  font-style: italic !important;
+}
+body.body--dxpr-theme-nav-desktop .content img {
+  border-radius: 10px !important;
+}
+
+body.body--dxpr-theme-nav-desktop #block-addtoany {
+  margin-bottom: 10px;
+  margin-left: 1em;
+  float: left;
+}
+
+body.body--dxpr-theme-nav-desktop #block-lmft {
+  margin-right: 1em;
+  float: right;
+}
+

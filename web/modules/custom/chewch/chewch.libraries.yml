@@ -1,0 +1,6 @@
+chewch:
+  css:
+    theme:
+      css/chewch.css: {preprocess: false}
+  dependencies:
+    - core/jquery
