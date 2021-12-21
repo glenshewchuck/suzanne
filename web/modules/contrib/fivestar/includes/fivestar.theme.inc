@@ -6,66 +6,7 @@
  */
 
 use Drupal\Core\Render\Element;
-use Drupal\Core\Template\Attribute;
 use Drupal\Core\Render\Element\RenderElement;
-
-/**
- * Shows a preview of a widget using a custom CSS file.
- */
-function theme_fivestar_preview_widget($variables) {
-//  $form = [
-//    '#post' => [],
-//    '#programmed' => FALSE,
-//    '#tree' => FALSE,
-//    '#parents' => [],
-//    '#array_parents' => [],
-//    '#required' => FALSE,
-//    '#attributes' => [],
-//    '#title_display' => 'before',
-//  ];
-//  $complete_form = [];
-//  $form_state = new FormState();
-//  $buidler = \Drupal::formBuilder();
-//  $form_state->setValues([]);
-//  $form_state->setProcessInput(FALSE);
-//  $form_state->setCompleteForm($complete_form);
-//  $form['vote'] = [
-//    '#type' => 'fivestar',
-//    '#stars' => 5,
-//    '#allow_clear' => TRUE,
-//    '#allow_revote' => TRUE,
-//    '#allow_ownvote' => TRUE,
-//    '#widget' => [
-//      'name' => isset($variables['name']) ? $variables['name'] : 'default',
-//      'css' => isset($variables['css']) && $variables['css'] != 'default' ? $variables['css'] : FALSE,
-//    ],
-//  ];
-//
-//  // Attach necessary JS settings.
-//  $settings = [
-//    'titleUser' => t('Your rating') . ': ',
-//    'titleAverage' => t('Average') . ': ',
-//    'feedbackSavingVote' => t('Saving your vote...'),
-//    'feedbackVoteSaved' => t('Your vote has been saved.'),
-//    'feedbackDeletingVote' => t('Deleting your vote...'),
-//    'feedbackVoteDeleted' => t('Your vote has been deleted.'),
-//  ];
-//  $form['#attached'][] = [
-//    'js' => [
-//      [
-//        'type' => 'setting',
-//        'data' => $settings,
-//      ],
-//    ],
-//  ];
-//
-//  $buidler->doBuildForm('fivestar_preview', $form, $form_state);
-//  $output = $form;
-//  $output['#prefix'] = '<div class="fivestar-star-preview fivestar-' . $form['vote']['#widget']['name'] . '">';
-//  $output['#suffix'] = '</div>';
-//
-//  return \Drupal::service('renderer')->render($output);
-}
 
 /**
  *
@@ -100,13 +41,6 @@ function theme_fivestar_preview($variables) {
   ], $form);
   $form = preg_replace('/( method=".*?")|( action=".*?")|(<input.*?name="(form_token|form_id|destination|form_build_id)".*?\/>)/', '', $form);
   return $form;
-}
-
-/**
- *
- */
-function theme_fivestar_preview_wrapper($variables) {
-  return '<div class="fivestar-preview fivestar-preview-' . $variables['type'] . '">' . $variables['content'] . '</div>';
 }
 
 /**

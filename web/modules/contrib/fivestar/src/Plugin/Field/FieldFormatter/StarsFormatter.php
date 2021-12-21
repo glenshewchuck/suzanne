@@ -50,7 +50,10 @@ class StarsFormatter extends FivestarFormatterBase {
         [$this, 'previewsExpand'],
       ],
       '#attached' => [
-        'library' => ['fivestar/fivestar.admin'],
+        'library' => [
+          'fivestar/fivestar.admin',
+          'fivestar/fivestar.base',
+        ],
       ],
     ];
 

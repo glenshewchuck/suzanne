@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.7",
         "drupal/addtoany": "^1.15",
         "drupal/admin_toolbar": "^3.0",
         "drupal/auto_entitylabel": "^3.0@beta",
@@ -33,6 +34,7 @@
         "drupal/freelancer_zymphonies_theme": "^2.0",
         "drupal/imagick": "^1.5",
         "drupal/maillog": "^1.0@beta",
+        "drupal/menu_item_role_access": "^2.0",
         "drupal/pathauto": "^1.8",
         "drupal/reroute_email": "^2.1",
         "drupal/rules": "^3.0-alpha7",
@@ -40,6 +42,7 @@
         "drupal/tara": "^8.3",
         "drupal/thex": "^9.1",
         "drupal/typed_data": "@alpha",
+        "drupal/user_current_paths": "^2.0",
         "drupal/vani": "^8.1",
         "drupal/votingapi": "^3.0@beta",
         "drupal/webform": "^6.1",
@@ -56,6 +59,11 @@
         "sort-packages": true
     },
     "extra": {
+      "patches": {
+           "drupal/fivestar": {
+               "Fix template hook issue": "https://www.drupal.org/files/issues/2021-08-06/3186841-22.patch"
+           }
+      },
       "merge-plugin": {
             "include": [
                 "web/modules/contrib/webform/composer.libraries.json"

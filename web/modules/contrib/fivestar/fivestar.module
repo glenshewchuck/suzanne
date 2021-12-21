@@ -104,16 +104,6 @@ function fivestar_theme() {
       ],
       'file' => 'includes/fivestar.theme.inc',
     ],
-    'fivestar_preview_widget' => [
-      'function' => 'theme_fivestar_preview_widget',
-      'variables' => ['css' => NULL, 'name' => NULL],
-      'file' => 'includes/fivestar.theme.inc',
-    ],
-    'fivestar_preview_wrapper' => [
-      'function' => 'theme_fivestar_preview_wrapper',
-      'variables' => ['content' => NULL, 'type' => 'direct'],
-      'file' => 'includes/fivestar.theme.inc',
-    ],
     // Field formatters.
     'fivestar_formatter_default' => [
       'function' => 'theme_fivestar_formatter_default',
