@@ -1,6 +1,7 @@
 <?php
 
 $settings['trusted_host_patterns'] = [
+'^www.glenshewchuck\.com$',
 '^suzanne\.build$',
 ];
 
